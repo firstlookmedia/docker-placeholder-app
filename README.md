@@ -47,7 +47,7 @@ them to docker runtime using `-e "PLACEHOLDER_MYVAR=awesome"` or
         "cpu" : 100,
         "memory": 512,
         "portMappings": [
-            { "containerPort": 4242 }
+            { "containerPort": 80 }
         ],
         "environment" : [
             { "name" : "PLACEHOLDER_APPNAME", "value" : "Yet Another Micro Service" }

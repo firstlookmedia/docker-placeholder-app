@@ -7,6 +7,6 @@ ADD ./entrypoint.sh ./entrypoint.sh
 
 ADD ./503.html.tmpl ./503.html.tmpl
 
-EXPOSE 4242
+EXPOSE 80
 
 CMD [ "./entrypoint.sh" ]
