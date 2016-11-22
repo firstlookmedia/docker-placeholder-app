@@ -8,16 +8,18 @@ In our architecture, canonical task definitions live in the application reposito
 Using a placeholder app such as this in the `terraform` configs prevents duplication \
 of that task def and provides clear indication that further setup needs to be done.
 
+Published to Docker Hub here: [https://hub.docker.com/r/firstlookmedia/placeholder-app/](https://hub.docker.com/r/firstlookmedia/placeholder-app/)
+
 ## Build and Test
 
 ```
-docker build -t flm/placeholder-app .
+docker build -t firstlookmedia/placeholder-app .
 ```
 
 ```
 docker run -ti --rm -p 80:80 \
   -e "PLACEHOLDER_APPNAME=YAMS" \
-  flm/placeholder-app
+  firstlookmedia/placeholder-app
 ```
 
 ```
@@ -62,5 +64,5 @@ them to docker runtime using `-e "PLACEHOLDER_MYVAR=awesome"` or
 ```
 
 
-## References
+
 
