@@ -17,13 +17,13 @@ docker build -t firstlookmedia/placeholder-app .
 ```
 
 ```
-docker run -ti --rm -p 80:80 \
+docker run -ti --rm -p 8080:8080 \
   -e "PLACEHOLDER_APPNAME=YAMS" \
   firstlookmedia/placeholder-app
 ```
 
 ```
-curl -Li http://127.0.0.1:80
+curl -Li http://127.0.0.1:8080
 ```
 
 ## Index Template
@@ -47,7 +47,7 @@ them to docker runtime using `-e "PLACEHOLDER_MYVAR=awesome"` or
         "cpu" : 100,
         "memory": 512,
         "portMappings": [
-            { "containerPort": 80 }
+            { "containerPort": 8080 }
         ],
         "environment" : [
             { "name" : "PLACEHOLDER_APPNAME", "value" : "Yet Another Micro Service" }
